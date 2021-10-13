@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.agenda{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+}
+
+body{
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    
+    
+    
+}
+
+
+.agenda{
+
+    padding: 20px;
+    box-shadow: 0 0 12PX #e5e7e6;
+}
+
+.moi-jour{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.moi-jour span{
+    font-size: 14px;
+    margin-right: 5px;
+    background-color: #D46F4D;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.moi-jour span:last-child{
+    background-color: transparent;
+    color: #D46F4D;
+    border: 1px solid #D46F4D;
+}
+
+
+.jours{
+    color: #D46F4D;
+    padding: 20px;
+}
+
+.jours span {
+    color: ;
+    padding: 20px;
+    
+    
+}
+
+
+.journum{
+    display: flex;
+    justify-content: v;
+    
+
+}
+
+.journum span {
+    width: 14.30%;
+    padding: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: .5;
+}
+
+.journum span:not(next-month)::before{
+    content: "";
+    position:absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #D46F4D;
+    border-radius: 100%; 
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+}
+
+.journum span:not(.next-month):hover{
+    color: #fff;
+}
+
+.journum span:not(.next-month):hover::before{
+    opacity: 1;
+}
+
+
+.next-month{
+    color: #ccc !important;
+    cursor: not-allowed !important;
+}
+
+.form{
+    
+    background-color: #EEE6D8;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: -5%;
+    border-radius: 2%;      
+    
+}
+
+
+    
+
+
+.form-titre{
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+    
+}
+
+.titre{
+    font-size: 18px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+}
+
+form .input  input[type="text"]{ 
+    padding: 7%;
+    border-radius: 2%;
+    margin-bottom: 5%;
+    border: none;
+    background-color #f2f2f2;    
+    outline: none;
+    box-sizing: content-box;
+    
+    
+
+    
+}
+
+.image{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+form .input  input[type="date"], input[type="time"]{ 
+
+    padding: 7%;
+    border-radius: 2%;
+    margin-bottom: 5%;
+    border: none;
+    background-color #f2f2f2;    
+    outline: none;
+
+}
+
+.button{
+    padding: 5% 8%;
+    border: none;
+    border-radius: 8%;
+    margin-bottom: 2%;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
